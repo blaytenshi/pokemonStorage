@@ -5,7 +5,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Connection } from 'typeorm';
 import { PokemonController } from './pokemon/pokemon.controller';
 import { PokemonService } from './pokemon/pokemon.service';
-import {PokemonModule} from './pokemon/pokemon.module';
+import { PokemonModule } from './pokemon/pokemon.module';
+import { TrainerModule } from './trainer/trainer.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import {PokemonModule} from './pokemon/pokemon.module';
         synchronize: true,
       }),
       PokemonModule,
+      TrainerModule,
   ],
   controllers: [AppController],
   providers: [AppService],
