@@ -1,0 +1,15 @@
+# This is for running everything locally!
+version: '3'
+services:
+  client:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./frontEnd
+    volumes:
+      - /app/node_modules
+      - ./frontEnd:/app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    # Routing ports from outside (local pc 5050 to inside container 3000)
+    ports:
+      - '5050:3000'
