@@ -20,9 +20,11 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@nestjs/common": "^6.3.2",
-    "@nestjs/core": "^6.3.2",
-    "@nestjs/platform-express": "^6.3.2",
+    "@nestjs/common": "^6.5.2",
+    "@nestjs/core": "^6.5.2",
+    "@nestjs/jwt": "^6.1.1",
+    "@nestjs/passport": "^6.1.0",
+    "@nestjs/platform-express": "^6.5.2",
     "@nestjs/typeorm": "^6.1.2",
     "pg": "^7.11.0",
     "reflect-metadata": "^0.1.12",
@@ -36,7 +38,7 @@
     "@types/jest": "^23.3.13",
     "@types/node": "^10.14.10",
     "@types/supertest": "^2.0.7",
-    "jest": "^23.6.0",
+    "jest": "^24.8.0",
     "nodemon": "^1.19.1",
     "prettier": "^1.18.2",
     "supertest": "^3.4.1",
