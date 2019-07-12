@@ -4,10 +4,10 @@ services:
   client:
     build:
       dockerfile: Dockerfile.dev
-      context: ./frontEnd
+      context: ./client
     volumes:
       - /app/node_modules
-      - ./frontEnd:/app
+      - ./client:/app
     environment:
       - CHOKIDAR_USEPOLLING=true
     # Routing ports from outside (local pc 5050 to inside container 3000)
